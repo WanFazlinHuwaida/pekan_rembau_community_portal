@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rembau Community Portal - Placeholder</title>
+  <title>Rembau Community Portal - Culture</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
@@ -51,7 +51,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Rembau</a></li>
           <li><a href="history.html">History</a></li>
-          <li><a href="culture.html">Culture</a></li>
+          <li><a href="culture.html" class="active">Culture</a></li>
           <li><a href="template.html">People</a></li>
           <li><a href="template.html">Amenities</a></li>
           <li><a href="template.html">Attractions</a></li>
@@ -64,16 +64,65 @@
       </div>
     </nav>
 
-    <!-- Boilerplate Main Block -->
-    <main class="template-main-content">
-      <div class="template-container">
-        <h2>Content Coming Soon</h2>
-        <p>This layout functions as a template for other pages. Copy this file, rename it (e.g., "food.html"), and insert your content within this section [1].</p>
-        <div class="back-home-wrapper">
-          <a href="index.html" class="btn btn-primary"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-container">
+      <p class="breadcrumb">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a> &gt; <span class="current">Culture</span>
+      </p>
+    </div>
+
+    <!-- Culture Main Intro -->
+    <section class="about-hero-section">
+      <div class="about-hero-container">
+        
+        <div class="about-text-area">
+          <h2 class="about-title">Culture & Heritage</h2>
+          <div class="gold-divider-horizontal"></div>
+          <p class="about-intro-p">
+            The heart of Rembau is deeply rooted in the unique social and structural system of Adat Perpatih. This matrilineal customary law defines social hierarchies, traditional governance, and daily customs.
+          </p>
+          <p class="about-intro-p">
+            Adat Perpatih emphasizes the spirit of consensus, or "muafakat," which promotes democratic values and peaceful conflict resolution within the community. Heritage preservation is reflected in every aspect of life, from traditional architectural designs to local customs.
+          </p>
         </div>
+
+        <div class="about-image-area">
+          <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1200&q=80" alt="Culture Heritage Image">
+        </div>
+
       </div>
-    </main>
+    </section>
+
+    <!-- Custom Culture Pillars Grid -->
+    <section class="history-grid-section">
+      <div class="history-grid-container">
+        
+        <div class="history-card highlighted-box">
+          <div class="h-card-icon"><i class="fa-solid fa-gopuram"></i></div>
+          <h3>Adat Perpatih</h3>
+          <p>The unique customary law brought by Minangkabau settlers that practices matrilineal lineage, democratic leadership, and customary values.</p>
+        </div>
+
+        <div class="history-card highlighted-box">
+          <div class="h-card-icon"><i class="fa-solid fa-house-chimney-crack"></i></div>
+          <h3>Traditional Architecture</h3>
+          <p>Preserving beautiful, curved wooden structures, traditional Malay longhouses, and historic custom halls.</p>
+        </div>
+
+        <div class="history-card highlighted-box">
+          <div class="h-card-icon"><i class="fa-solid fa-drum"></i></div>
+          <h3>Performing Arts</h3>
+          <p>Celebrating rich folklore, traditional music (Caklempong, Bongai), and historic customary dances during local festivals.</p>
+        </div>
+
+        <div class="history-card highlighted-box">
+          <div class="h-card-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+          <h3>Community Values</h3>
+          <p>Strong focus on gotong-royong, shared cultural responsibility, respect for lineage, and localized custom titles (Undang Luak).</p>
+        </div>
+
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="main-footer">

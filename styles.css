@@ -1,15 +1,15 @@
 /* ==========================================================================
-   Root System Colors (Brown Heritage Palette)
+   Root System Colors
    ========================================================================== */
 :root {
-  --primary-color: #5c3818;      /* Warm dark brown */
-  --secondary-color: #8c5a3c;    /* Mid-tone brown */
-  --accent-color: #d0a36b;       /* Gold/beige highlight */
-  --bg-cream: #faf5ef;           /* Authentic cream canvas background */
+  --primary-color: #5c3818;      /* Deep rich heritage brown */
+  --secondary-color: #8c5a3c;    /* Warm mid-tone brown */
+  --accent-color: #d0a36b;       /* Golden highlight */
+  --bg-cream: #faf5ef;           /* Cream background */
   --bg-white: #ffffff;
-  --text-dark: #2c1a04;          /* Dark charcoal brown */
-  --text-light: #6e5e4f;         /* Slate brown */
-  --canvas-outer: #4e2d1a;       /* Framing canvas deep border color */
+  --text-dark: #2c1a04;          /* Dark warm charcoal-brown */
+  --text-light: #6e5e4f;         /* Muted brown-gray */
+  --canvas-outer: #4e2d1a;       /* Framing canvas backdrop color */
   --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans: 'Poppins', Arial, sans-serif;
   --font-cursive: 'Great Vibes', cursive;
@@ -17,7 +17,7 @@
 }
 
 /* ==========================================================================
-   Core Layout Wrappers
+   Global & Frame Base
    ========================================================================== */
 * {
   box-sizing: border-box;
@@ -27,10 +27,10 @@
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--canvas-outer); /* Outer backdrop frame color */
+  background-color: var(--canvas-outer);
   color: var(--text-dark);
   line-height: 1.6;
-  padding: 20px; /* Surrounds the framed container */
+  padding: 20px;
 }
 
 a {
@@ -45,12 +45,11 @@ img {
   display: block;
 }
 
-/* Framed Canvas Layout matching visual mockup borders */
 .framed-canvas {
   max-width: 1360px;
   margin: 0 auto;
   background-color: var(--bg-cream);
-  border-radius: 20px 20px 0 0; /* Curves the top boundaries */
+  border-radius: 20px 20px 0 0;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.1);
   overflow: hidden;
@@ -58,7 +57,7 @@ img {
 }
 
 /* ==========================================================================
-   Top Header Layout
+   Header & Subtitle (with Search)
    ========================================================================== */
 .main-header {
   background-color: var(--bg-cream);
@@ -80,10 +79,6 @@ img {
   gap: 20px;
 }
 
-.header-illustration {
-  flex-shrink: 0;
-}
-
 .logo-text h1 {
   font-family: var(--font-serif);
   font-size: 1.6rem;
@@ -99,7 +94,6 @@ img {
   margin-top: -2px;
 }
 
-/* Search Bar top right */
 .search-bar {
   display: flex;
   background-color: var(--bg-white);
@@ -128,7 +122,7 @@ img {
 }
 
 /* ==========================================================================
-   Navigation Bar
+   12-Button Menu Bar Styling (Slightly smaller, fits 12 columns elegantly)
    ========================================================================== */
 .main-nav {
   background-color: var(--bg-cream);
@@ -138,7 +132,7 @@ img {
 .nav-container {
   max-width: 1250px;
   margin: 0 auto;
-  padding: 10px 30px;
+  padding: 10px 20px;
 }
 
 .menu-toggle {
@@ -148,30 +142,35 @@ img {
 .nav-links {
   display: flex;
   list-style: none;
-  justify-content: flex-start;
-  gap: 15px;
+  justify-content: space-between;
+  gap: 6px;
+  flex-wrap: wrap; /* Wraps beautifully if viewport narrows */
 }
 
 .nav-links li a {
-  font-size: 0.85rem;
-  font-weight: 500;
-  padding: 8px 16px;
-  border-radius: 8px; /* Matches blocky navigation pill curves */
+  font-size: 0.76rem; /* Scaled slightly to fit 12 distinct buttons */
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 6px;
   color: var(--text-dark);
+  border: 1px solid transparent;
 }
 
 .nav-links li a:hover {
-  background-color: rgba(140, 90, 60, 0.1);
-  color: var(--primary-color);
+  background-color: rgba(140, 90, 60, 0.08);
+  border-color: rgba(140, 90, 60, 0.25);
 }
 
+/* Bold navigation active state */
 .nav-links li a.active {
   background-color: var(--primary-color);
   color: var(--bg-white);
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 3px 8px rgba(92, 56, 24, 0.25);
 }
 
 /* ==========================================================================
-   Hero Banner Area
+   Hero Banner & Visual separators
    ========================================================================== */
 .hero-section {
   position: relative;
@@ -197,7 +196,6 @@ img {
   z-index: 1;
 }
 
-/* Decorative side margin elements (floating assets) */
 .margin-decoration {
   position: absolute;
   width: 100px;
@@ -242,7 +240,6 @@ img {
   text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 }
 
-/* Horizontal line separator with centered gold diamond */
 .divider-diamond {
   display: flex;
   align-items: center;
@@ -292,8 +289,9 @@ img {
 
 .btn-primary {
   background-color: var(--primary-color);
-  color: var(--accent-color); /* Gold text on brown base */
-  border: 1px solid var(--primary-color);
+  color: var(--accent-color);
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 4px 12px rgba(92, 56, 24, 0.25);
 }
 
 .btn-primary:hover {
@@ -315,11 +313,24 @@ img {
 }
 
 /* ==========================================================================
-   Overlapping navigation cards
+   "Bold" & Prominent Card Styling (kotak dia bagi menyerlah sikit)
    ========================================================================== */
+.highlighted-box {
+  border: 2.5px solid var(--primary-color) !important; /* Thick prominent border [1] */
+  box-shadow: 0 8px 24px rgba(92, 56, 24, 0.16) !important; /* Deeper structural shadow */
+  transition: var(--transition);
+}
+
+.highlighted-box:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 15px 32px rgba(92, 56, 24, 0.28) !important; /* Pronounced hover pop-out state */
+  border-color: var(--secondary-color) !important;
+}
+
+/* 8 Overlapping Cards on Homepage */
 .grid-section {
   position: relative;
-  margin-top: -65px; /* Overlap intercept layout */
+  margin-top: -65px;
   z-index: 30;
 }
 
@@ -338,17 +349,11 @@ img {
 .menu-card {
   background-color: var(--bg-white);
   border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(44, 26, 4, 0.15);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
   height: 190px;
-}
-
-.menu-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(44, 26, 4, 0.22);
 }
 
 .card-top-half {
@@ -363,8 +368,8 @@ img {
 }
 
 .menu-card h3 {
-  font-size: 0.75rem;
-  font-weight: 600;
+  font-size: 0.74rem;
+  font-weight: 700;
   color: var(--text-dark);
   line-height: 1.2;
 }
@@ -372,7 +377,7 @@ img {
 .card-image-crop {
   height: 80px;
   overflow: hidden;
-  border-radius: 0 0 12px 12px;
+  border-radius: 0 0 10px 10px;
 }
 
 .card-image-crop img {
@@ -387,7 +392,7 @@ img {
 }
 
 /* ==========================================================================
-   Bottom Feature Pillars Banner
+   Four Pillars Banner Block
    ========================================================================== */
 .pillars-section {
   padding: 60px 20px;
@@ -399,9 +404,10 @@ img {
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: rgba(234, 223, 201, 0.4); /* Light sand accent fill */
+  background-color: rgba(234, 223, 201, 0.4);
   padding: 25px;
   border-radius: 16px;
+  border: 1.5px solid rgba(140, 90, 60, 0.2);
 }
 
 .pillar-col {
@@ -430,7 +436,7 @@ img {
 }
 
 /* ==========================================================================
-   About Page Layout
+   About/Culture Pages Layout
    ========================================================================== */
 .about-hero-section {
   padding: 50px 30px;
@@ -498,6 +504,7 @@ img {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(44, 26, 4, 0.15);
+  border: 2px solid var(--primary-color); /* Prominent border on large main images */
 }
 
 .about-image-area img {
@@ -506,7 +513,7 @@ img {
   object-fit: cover;
 }
 
-/* About Action Row Grid */
+/* About Action Core Cards */
 .core-buttons-section {
   padding: 10px 30px 60px 30px;
 }
@@ -522,7 +529,6 @@ img {
 .core-btn-card {
   background-color: var(--bg-white);
   border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(44, 26, 4, 0.05);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -579,7 +585,8 @@ img {
   color: var(--accent-color);
   padding: 12px;
   font-size: 0.85rem;
-  font-weight: 500;
+  font-weight: 600;
+  border-top: 1.5px solid var(--primary-color);
 }
 
 .core-action-btn:hover {
@@ -587,7 +594,7 @@ img {
 }
 
 /* ==========================================================================
-   History Grid & Timelines
+   History Timeline Components
    ========================================================================== */
 .breadcrumb-container {
   max-width: 1250px;
@@ -625,7 +632,6 @@ img {
   background-color: var(--bg-white);
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 4px 15px rgba(44, 26, 4, 0.03);
 }
 
 .h-card-icon {
@@ -647,7 +653,20 @@ img {
   line-height: 1.4;
 }
 
-/* Timeline Components styling */
+/* Custom Sepia Effect on History Main Image */
+.sepia-heritage-img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  filter: sepia(0.65) contrast(1.1) brightness(0.95);
+  transition: var(--transition);
+}
+
+.sepia-heritage-img:hover {
+  filter: sepia(0.3) contrast(1.1) brightness(1);
+}
+
+/* Timeline Layout */
 .timeline-section {
   background-color: var(--bg-white);
   padding: 60px 30px;
@@ -749,7 +768,7 @@ img {
 }
 
 /* ==========================================================================
-   Template Boilerplate
+   Template Placeholder Boilerplate
    ========================================================================== */
 .template-main-content {
   padding: 80px 20px;
@@ -780,7 +799,7 @@ img {
 }
 
 /* ==========================================================================
-   Bottom Footers
+   Footers
    ========================================================================== */
 .main-footer {
   background-color: var(--bg-cream);
@@ -807,34 +826,12 @@ img {
 }
 
 /* ==========================================================================
-   Mobile Responsive Rules
+   Responsive Framework (Media Queries)
    ========================================================================== */
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   body {
     padding: 10px;
   }
-  .menu-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .about-hero-container {
-    flex-direction: column;
-  }
-  .about-text-area, .about-image-area {
-    width: 100%;
-    flex: 0 0 100%;
-  }
-  .about-image-area img {
-    height: 350px;
-  }
-  .core-buttons-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .history-grid-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 1024px) {
   .menu-toggle {
     display: inline-flex;
     align-items: center;
@@ -870,6 +867,25 @@ img {
   }
   .nav-links.active {
     display: flex;
+  }
+  .menu-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .about-hero-container {
+    flex-direction: column;
+  }
+  .about-text-area, .about-image-area {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+  .about-image-area img {
+    height: 350px;
+  }
+  .core-buttons-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .history-grid-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -912,17 +928,4 @@ img {
   .history-grid-container {
     grid-template-columns: 1fr;
   }
-}
-
-/* Custom Sepia Vintage Effect for History Main Page Image */
-.sepia-heritage-img {
-  width: 100%;
-  height: 520px;
-  object-fit: cover;
-  filter: sepia(0.65) contrast(1.1) brightness(0.95); /* Produces a rich, vintage appearance [1] */
-  transition: var(--transition);
-}
-
-.sepia-heritage-img:hover {
-  filter: sepia(0.3) contrast(1.1) brightness(1); /* Gently transitions when hovered */
 }
