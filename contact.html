@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PEKAN REMBAU - Contact & FAQ</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- CSS kecil khusus untuk bentangan FAQ Accordion pada muka surat ini sahaja -->
+    <style>
+      .faq-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .faq-item {
+        background: var(--bg-white);
+        border-radius: 8px;
+        border: 1px solid rgba(140, 90, 60, 0.2);
+        overflow: hidden;
+      }
+      .faq-item summary {
+        padding: 15px 20px;
+        font-weight: 600;
+        color: var(--primary-color);
+        cursor: pointer;
+        outline: none;
+        background: rgba(250, 245, 239, 0.5);
+      }
+      .faq-item p {
+        padding: 15px 20px;
+        color: var(--text-dark);
+        font-size: 0.9rem;
+        border-top: 1px solid rgba(140, 90, 60, 0.1);
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="framed-canvas">
+      <!-- Header -->
+      <header class="main-header">
+        <div class="header-container">
+          <div class="logo-area">
+            <div class="logo-text">
+              <h1>PEKAN REMBAU COMMUNITY PORTAL</h1>
+              <p class="cursive-subtitle">
+                People, Heritage, Nature & Local Experiences
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Navigation Menu -->
+      <nav class="main-nav">
+        <div class="nav-container">
+          <button class="menu-toggle" aria-label="Toggle Menu">
+            <i class="fa-solid fa-bars"></i> Menu
+          </button>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Rembau</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="amenities.html">Amenities</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><a href="heritage.html">Heritage</a></li>
+            <li><a href="nature.html">Nature</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Contact Hero Banner -->
+      <section
+        class="hero-section"
+        style="
+          background-image: url(&quot;https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=1920&q=80&quot;);
+        "
+      >
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="hero-cursive">Get in Touch</p>
+          <h2>Contact Us & FAQ</h2>
+          <div class="divider-diamond">
+            <span class="line"></span><span class="diamond"></span
+            ><span class="line"></span>
+          </div>
+          <p class="hero-desc">
+            Have a question about visiting Rembau, local events, or our
+            heritage? We are here to help. Reach out to us or find quick answers
+            below.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Info & Map Layout (Menggunakan class split-info-block) -->
+      <section class="split-info-block" style="margin-bottom: 20px">
+        <!-- Kiri: Butiran Perhubungan -->
+        <div class="info-text-side">
+          <span class="section-tag-upper">Get in Touch</span>
+          <h2>Majlis Daerah Rembau</h2>
+          <p>
+            Feel free to reach out to the local council for any official
+            inquiries, tourism guidance, or community activities participation.
+          </p>
+
+          <table class="directory-table">
+            <tr>
+              <td><i class="fa-solid fa-location-dot"></i></td>
+              <td>
+                <strong>Address:</strong><br />
+                Jalan Dato' Undang Johol,<br />
+                71300 Rembau, Negeri Sembilan.
+              </td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-phone"></i></td>
+              <td>
+                <strong>Phone:</strong><br />
+                +606-685 3144 / +606-685 3366
+              </td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-envelope"></i></td>
+              <td>
+                <strong>Email:</strong><br />
+                mdr@mdr.gov.my
+              </td>
+            </tr>
+            <tr>
+              <td><i class="fa-regular fa-clock"></i></td>
+              <td>
+                <strong>Opening Hours:</strong><br />
+                Monday - Friday (8:00 AM – 5:00 PM)
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Kanan: Peta/Gambar Bangunan (Placeholder) -->
+        <div class="info-visual-side">
+          <img
+            src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=800&q=80"
+            alt="Map Location Concept"
+            style="height: 450px"
+          />
+          <div class="floating-stat-box">
+            <h5>Website</h5>
+            <p class="stat-highlight" style="font-size: 1rem">
+              <a
+                href="https://www.mdr.gov.my"
+                target="_blank"
+                style="color: var(--secondary-color)"
+                >www.mdr.gov.my</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section
+        style="padding: 40px 8%; max-width: 1300px; margin: 0 auto 60px auto"
+      >
+        <div class="section-header-center" style="margin-bottom: 30px">
+          <h2>Frequently Asked Questions</h2>
+          <div class="accent-line"></div>
+        </div>
+
+        <div class="faq-wrapper">
+          <details class="faq-item">
+            <summary>What is Rembau famous for?</summary>
+            <p>
+              Rembau is renowned for its preservation of the Adat Perpatih
+              (matrilineal customary law), historic timber architecture,
+              beautiful natural landscapes like Jeram Toi Waterfall, and its
+              delicious, spicy Masak Lemak Cili Api.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>What is Adat Perpatih?</summary>
+            <p>
+              It is a unique customary system originating from the Minangkabau
+              people, where lineage and inheritance are traced through the
+              maternal line. It promotes consensus and community harmony.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>When is the best time to visit Rembau?</summary>
+            <p>
+              Rembau can be visited year-round. However, visiting during
+              cultural festivals (often mid-year) or fruit seasons (Durian
+              season around June-August) offers a more vibrant local experience.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>Where can I find local authentic food?</summary>
+            <p>
+              Local eateries around Pekan Rembau and Pedas are perfect for
+              finding authentic dishes like Lemang, Rendang, and Rembau Beef
+              Noodle. Visit our Food page for more details!
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>How can I join community activities?</summary>
+            <p>
+              You can refer to the Events calendar on this portal or directly
+              contact the Majlis Daerah Rembau (MDR) office to inquire about
+              upcoming public gotong-royong or cultural nights.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <!-- Footer Standard -->
+      <footer class="main-footer">
+        <div class="footer-container">
+          <p class="footer-sources">
+            Sumber: Majlis Daerah Rembau (MDR) &nbsp;|&nbsp; N9 Tourism
+            &nbsp;|&nbsp; NS Corporation (Biodiversity)
+          </p>
+        </div>
+        <div class="footer-pattern"></div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

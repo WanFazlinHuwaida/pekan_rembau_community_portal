@@ -1,141 +1,215 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PEKAN REMBAU COMMUNITY PORTAL - Culture</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-  <div class="framed-canvas">
-
-    <!-- Header -->
-    <header class="main-header">
-      <div class="header-container">
-        <div class="logo-area">
-          <div class="header-illustration">
-            <svg class="illustration-svg" viewBox="0 0 100 60" width="100" height="60">
-              <path d="M15,25 C12,18 20,10 25,18 C28,12 38,15 32,22 C38,26 34,36 27,32 C24,38 14,34 18,27 C10,28 10,20 15,25 Z" fill="#FFFBF2" stroke="#D0A36B" stroke-width="1.5"/>
-              <circle cx="23" cy="24" r="3" fill="#E2B65C"/>
-              <path d="M50,15 L60,15 C62,15 65,18 64,22 L58,45 C57,48 52,50 48,50 C44,50 39,48 38,45 L32,22 C31,18 34,15 36,15 Z" fill="#8C5A3C"/>
-              <ellipse cx="48" cy="15" rx="10" ry="3" fill="#5C3818"/>
-              <path d="M58,22 C65,22 68,30 63,35" fill="none" stroke="#5C3818" stroke-width="3" stroke-linecap="round"/>
-              <path d="M70,30 L85,30 C90,30 92,36 90,42 C87,48 83,50 78,50 C73,50 69,48 66,42 C64,36 66,30 70,30 Z" fill="#D0A36B"/>
-              <path d="M70,30 Q78,20 85,30" fill="none" stroke="#8C5A3C" stroke-width="2"/>
-            </svg>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Culture &amp; Heritage | Rembau Community Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="framed-canvas">
+      <!-- Header -->
+      <header class="main-header">
+        <div class="header-container">
+          <div class="logo-area">
+            <div class="logo-text">
+              <h1>PEKAN REMBAU COMMUNITY PORTAL</h1>
+              <p class="cursive-subtitle">
+                People, Heritage, Nature &amp; Local Experiences
+              </p>
+            </div>
           </div>
-          <div class="logo-text">
-            <h1>PEKAN REMBAU COMMUNITY PORTAL</h1>
-            <p class="cursive-subtitle">People, Heritage, Nature & Local Experiences</p>
+          <div class="header-right">
+            <div class="search-bar">
+              <input type="text" placeholder="Search..." />
+              <button aria-label="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
           </div>
         </div>
-        <div class="header-right">
-          <div class="search-bar">
-            <input type="text" placeholder="Search...">
-            <button aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
-          </div>
+      </header>
+
+      <!-- Navigation Header Terpaut (Linked) -->
+      <nav class="main-nav">
+        <div class="nav-container">
+          <button class="menu-toggle" aria-label="Toggle Menu">
+            <i class="fa-solid fa-bars"></i> Menu
+          </button>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Rembau</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="culture.html" class="active">Culture</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="amenities.html">Amenities</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><a href="heritage.html">Heritage</a></li>
+            <li><a href="nature.html">Nature</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
-      </div>
-    </header>
+      </nav>
 
-    <!-- Navigation Menu Bar with 12 Flowchart Buttons -->
-    <nav class="main-nav">
-      <div class="nav-container">
-        <button class="menu-toggle" aria-label="Toggle Menu">
-          <i class="fa-solid fa-bars"></i> Menu
-        </button>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Rembau</a></li>
-          <li><a href="history.html">History</a></li>
-          <li><a href="culture.html" class="active">Culture</a></li>
-          <li><a href="template.html">People</a></li>
-          <li><a href="template.html">Amenities</a></li>
-          <li><a href="template.html">Attractions</a></li>
-          <li><a href="template.html">Heritage</a></li>
-          <li><a href="template.html">Nature</a></li>
-          <li><a href="template.html">Food</a></li>
-          <li><a href="template.html">Event</a></li>
-          <li><a href="template.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+      <main>
+        <section class="hero">
+          <div class="hero-text">
+            <span>❀ Our Culture</span>
+            <h1>Culture of Rembau</h1>
+            <div class="line"></div>
+            <p>
+              Rembau is well known for its rich traditions, customs and cultural
+              heritage inherited from generation to generation. Every
+              celebration, performance and local practice reflects the identity
+              and unity of its people.
+            </p>
+            <div class="hero-button">
+              <a href="#highlights" class="btn1"
+                >Discover Our Culture <i class="fa-solid fa-arrow-right"></i
+              ></a>
+              <a href="#culture-video" class="btn2"
+                ><i class="fa-solid fa-circle-play"></i> Watch Video</a
+              >
+            </div>
+          </div>
 
-    <!-- Breadcrumb -->
-    <div class="breadcrumb-container">
-      <p class="breadcrumb">
-        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a> &gt; <span class="current">Culture</span>
-      </p>
+          <div class="hero-image">
+            <div class="left-image">
+              <img
+                src="image/TarianRembau.jpg"
+                alt="Traditional dance of Rembau"
+              />
+            </div>
+            <div class="right-image">
+              <img
+                src="image/Caklempong.jpg"
+                alt="Traditional Caklempong instrument"
+              />
+              <img src="image/KuihSopang.jpg" alt="Traditional kuih sopang" />
+            </div>
+          </div>
+        </section>
+
+        <section class="video-section" id="culture-video">
+          <div class="video-container">
+            <h2>Watch Rembau Culture in Motion</h2>
+            <p>
+              Explore the traditions, music and heritage of Rembau through this
+              video.
+            </p>
+            <div class="video-frame">
+              <video controls playsinline poster="image/TarianRembau.jpg">
+                <source src="video/CultureRembau.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </section>
+
+        <section class="highlights" id="highlights">
+          <div class="section-title">
+            <h2>Our Cultural Highlights</h2>
+            <p>
+              Discover the unique traditions, arts, cuisine and values that
+              define the cultural identity of Rembau.
+            </p>
+          </div>
+
+          <div class="highlight-container">
+            <div class="highlight-card">
+              <div class="icon"><i class="fa-solid fa-landmark"></i></div>
+              <h3>Traditions &amp; Customs</h3>
+              <p>
+                Learn about traditional ceremonies, customs and practices that
+                have been preserved through generations.
+              </p>
+              <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="highlight-card">
+              <div class="icon"><i class="fa-solid fa-masks-theater"></i></div>
+              <h3>Arts &amp; Performances</h3>
+              <p>
+                Experience traditional dances, music performances and local arts
+                that represent Rembau's heritage.
+              </p>
+              <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="highlight-card">
+              <div class="icon"><i class="fa-solid fa-bowl-food"></i></div>
+              <h3>Food Heritage</h3>
+              <p>
+                Taste authentic Negeri Sembilan cuisine and traditional recipes
+                passed down for many generations.
+              </p>
+              <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="highlight-card">
+              <div class="icon"><i class="fa-solid fa-users"></i></div>
+              <h3>Community &amp; Values</h3>
+              <p>
+                Discover the spirit of unity, cooperation and hospitality among
+                the people of Rembau.
+              </p>
+              <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="about-culture">
+          <div class="about-container">
+            <div class="about-text">
+              <span class="section-subtitle">✦ Cultural Heritage</span>
+              <h2>About Rembau Culture</h2>
+              <div class="line"></div>
+              <p>
+                Rembau is widely recognised for preserving the unique
+                <strong>Adat Perpatih</strong>, a matrilineal custom inherited
+                from the Minangkabau community. This cultural heritage promotes
+                respect, unity and cooperation among the people while
+                maintaining traditional values across generations.
+              </p>
+              <ul>
+                <li>✔ Adat Perpatih</li>
+                <li>✔ Minangkabau Heritage</li>
+                <li>✔ Traditional Dance &amp; Music</li>
+                <li>✔ Traditional Games</li>
+                <li>✔ Handicrafts &amp; Local Arts</li>
+              </ul>
+              <div class="about-btn">
+                <a href="#" class="btn-read">Read More →</a>
+                <a href="#" class="btn-video">▶ Watch Video</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer Standard Terpusat -->
+      <footer class="main-footer">
+        <div class="footer-container">
+          <p class="footer-sources">
+            Sumber: Majlis Daerah Rembau (MDR) &nbsp;|&nbsp; N9 Tourism
+            &nbsp;|&nbsp; NS Corporation (Biodiversity)
+          </p>
+        </div>
+        <div class="footer-pattern"></div>
+      </footer>
     </div>
-
-    <!-- Culture Main Intro -->
-    <section class="about-hero-section">
-      <div class="about-hero-container">
-        
-        <div class="about-text-area">
-          <h2 class="about-title">Culture & Heritage</h2>
-          <div class="gold-divider-horizontal"></div>
-          <p class="about-intro-p">
-            The heart of Rembau is deeply rooted in the unique social and structural system of Adat Perpatih. This matrilineal customary law defines social hierarchies, traditional governance, and daily customs.
-          </p>
-          <p class="about-intro-p">
-            Adat Perpatih emphasizes the spirit of consensus, or "muafakat," which promotes democratic values and peaceful conflict resolution within the community. Heritage preservation is reflected in every aspect of life, from traditional architectural designs to local customs.
-          </p>
-        </div>
-
-        <div class="about-image-area">
-          <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1200&q=80" alt="Culture Heritage Image">
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Custom Culture Pillars Grid -->
-    <section class="history-grid-section">
-      <div class="history-grid-container">
-        
-        <div class="history-card highlighted-box">
-          <div class="h-card-icon"><i class="fa-solid fa-gopuram"></i></div>
-          <h3>Adat Perpatih</h3>
-          <p>The unique customary law brought by Minangkabau settlers that practices matrilineal lineage, democratic leadership, and customary values.</p>
-        </div>
-
-        <div class="history-card highlighted-box">
-          <div class="h-card-icon"><i class="fa-solid fa-house-chimney-crack"></i></div>
-          <h3>Traditional Architecture</h3>
-          <p>Preserving beautiful, curved wooden structures, traditional Malay longhouses, and historic custom halls.</p>
-        </div>
-
-        <div class="history-card highlighted-box">
-          <div class="h-card-icon"><i class="fa-solid fa-drum"></i></div>
-          <h3>Performing Arts</h3>
-          <p>Celebrating rich folklore, traditional music (Caklempong, Bongai), and historic customary dances during local festivals.</p>
-        </div>
-
-        <div class="history-card highlighted-box">
-          <div class="h-card-icon"><i class="fa-solid fa-handshake-angle"></i></div>
-          <h3>Community Values</h3>
-          <p>Strong focus on gotong-royong, shared cultural responsibility, respect for lineage, and localized custom titles (Undang Luak).</p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="main-footer">
-      <div class="footer-container">
-        <p class="footer-sources">
-          Sumber: Majlis Daerah Rembau (MDR) &nbsp;|&nbsp; N9 Tourism &nbsp;|&nbsp; NS Corporation (Biodiversity)
-        </p>
-      </div>
-      <div class="footer-pattern"></div>
-    </footer>
-
-  </div>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

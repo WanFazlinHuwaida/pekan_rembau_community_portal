@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PEKAN REMBAU - Events & Calendar</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="framed-canvas">
+      <!-- Header -->
+      <header class="main-header">
+        <div class="header-container">
+          <div class="logo-area">
+            <div class="logo-text">
+              <h1>PEKAN REMBAU COMMUNITY PORTAL</h1>
+              <p class="cursive-subtitle">
+                People, Heritage, Nature & Local Experiences
+              </p>
+            </div>
+          </div>
+          <div class="header-right">
+            <div class="search-bar">
+              <input type="text" placeholder="Search events..." />
+              <button aria-label="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Navigation Menu -->
+      <nav class="main-nav">
+        <div class="nav-container">
+          <button class="menu-toggle" aria-label="Toggle Menu">
+            <i class="fa-solid fa-bars"></i> Menu
+          </button>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Rembau</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="amenities.html">Amenities</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><a href="heritage.html">Heritage</a></li>
+            <li><a href="nature.html">Nature</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="event.html" class="active">Event</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Event Hero Banner -->
+      <section
+        class="hero-section"
+        style="
+          background-image: url(&quot;https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1920&q=80&quot;);
+        "
+      >
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="hero-cursive">Gather & Celebrate</p>
+          <h2>Cultural Events in Rembau</h2>
+          <div class="divider-diamond">
+            <span class="line"></span><span class="diamond"></span
+            ><span class="line"></span>
+          </div>
+          <p class="hero-desc">
+            Stay updated with the latest community news, monthly cultural
+            festivals, handicraft exhibitions, and local gatherings.
+          </p>
+        </div>
+      </section>
+
+      <!-- Featured Event Layout (Menggunakan class nature-two-col) -->
+      <section class="nature-two-col" style="margin-top: 60px">
+        <div class="nature-side-image">
+          <img
+            src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=800&q=80"
+            alt="Cultural Festival"
+          />
+        </div>
+        <div class="nature-side-content">
+          <span class="nature-tag">Featured Event</span>
+          <h2>Rembau Cultural Festival 2026</h2>
+          <p>
+            Join us for a grand celebration of Adat Perpatih featuring
+            traditional dances, Caklempong music performances, and a massive
+            local food bazaar. An unforgettable experience to witness the living
+            traditions of Negeri Sembilan.
+          </p>
+          <div class="nature-location-box">
+            <ul>
+              <li>
+                <i class="fa-solid fa-calendar-days"></i> 15 - 17 August 2026
+              </li>
+              <li><i class="fa-solid fa-location-dot"></i> Dataran Rembau</li>
+              <li>
+                <i class="fa-solid fa-ticket"></i> Free Admission for Public
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="nature-btn">Register Interest</a>
+        </div>
+      </section>
+
+      <!-- Upcoming Events Timeline / Grid -->
+      <section class="history-grid-section">
+        <div class="section-header-center" style="margin-bottom: 30px">
+          <h2>Event Calendar</h2>
+          <div class="accent-line"></div>
+        </div>
+
+        <div class="history-grid-container">
+          <div class="history-card highlighted-box">
+            <div class="h-card-icon"><i class="fa-solid fa-broom"></i></div>
+            <h3>Community Clean-Up</h3>
+            <p>
+              <strong>May 2026</strong><br />Gotong-royong campaign working
+              together for a cleaner and greener Rembau environment.
+            </p>
+          </div>
+
+          <div class="history-card highlighted-box">
+            <div class="h-card-icon">
+              <i class="fa-solid fa-masks-theater"></i>
+            </div>
+            <h3>Performance Night</h3>
+            <p>
+              <strong>June 2026</strong><br />Traditional music, dance, and
+              storytelling (Bongai) performed by local youths.
+            </p>
+          </div>
+
+          <div class="history-card highlighted-box">
+            <div class="h-card-icon">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </div>
+            <h3>Handicraft Exhibition</h3>
+            <p>
+              <strong>September 2026</strong><br />Showcase and sell handmade
+              traditional products, woven baskets, and local textiles.
+            </p>
+          </div>
+
+          <div class="history-card highlighted-box">
+            <div class="h-card-icon">
+              <i class="fa-solid fa-person-biking"></i>
+            </div>
+            <h3>Rembau Eco-Ride</h3>
+            <p>
+              <strong>November 2026</strong><br />A 30km cycling event passing
+              through paddy fields, villages, and forest reserves.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Standard -->
+      <footer class="main-footer">
+        <div class="footer-container">
+          <p class="footer-sources">
+            Sumber: Majlis Daerah Rembau (MDR) &nbsp;|&nbsp; N9 Tourism
+            &nbsp;|&nbsp; NS Corporation (Biodiversity)
+          </p>
+        </div>
+        <div class="footer-pattern"></div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

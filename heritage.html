@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEKAN REMBAU - Heritage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="framed-canvas">
+        <!-- Header -->
+        <header class="main-header">
+            <div class="header-container">
+                <div class="logo-area">
+                    <div class="logo-text">
+                        <h1>PEKAN REMBAU COMMUNITY PORTAL</h1>
+                        <p class="cursive-subtitle">People, Heritage, Nature & Local Experiences</p>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search heritage sites...">
+                        <button aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <div class="nav-container">
+                <button class="menu-toggle" aria-label="Toggle Menu"><i class="fa-solid fa-bars"></i> Menu</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Rembau</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="culture.html">Culture</a></li>
+                    <li><a href="people.html">People</a></li>
+                    <li><a href="amenities.html">Amenities</a></li>
+                    <li><a href="attractions.html">Attractions</a></li>
+                    <li><a href="heritage.html" class="active">Heritage</a></li> <!-- Ditukar nama kepada Heritage sahaja -->
+                    <li><a href="nature.html">Nature</a></li> 
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Premium Hero Section (Menggunakan gambar pemandangan luaran/scenic) -->
+        <section class="premium-hero heritage-bg">
+            <div class="hero-blur-box">
+                <span class="hero-tag-mini">✨ Luak Beradat</span>
+                <h1>The Living Legacy of Rembau</h1>
+                <p>Immerse yourself in the sanctuary of Adat Perpatih, centuries-old wooden architecture, and sacred traditions meticulously preserved through generations.</p>
+                <div class="hero-actions">
+                    <a href="#explore" class="btn-premium">Begin Journey</a>
+                    <a href="history.html" class="btn-outline">Historical Timeline</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modern Showcase Section -->
+        <section class="showcase-section" id="explore">
+            <div class="section-header-center">
+                <h2>Treasures of the Ancestors</h2>
+                <div class="accent-line"></div>
+                <p>Explore the historic identity that defines the community and architectural marvels of Luak Rembau.</p>
+            </div>
+
+            <!-- Complex Grid Showcase -->
+            <div class="showcase-grid">
+                <!-- Large Feature Card (Kini menggunakan gambar suasana warisan lain untuk menukar kedudukan visual) -->
+                <div class="showcase-card large" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(44,26,4,0.95)), url('image/adatpepatihreal.png');">
+                    <div class="card-inner-content">
+                        <span class="card-badge">Customary Heritage</span>
+                        <h3>Adat Perpatih Matrilineal System</h3>
+                        <p>A unique customary law where lineage, clan inheritance, and land titles are passed down through the maternal bloodline, cultivating deep community respect.</p>
+                        <a href="history.html" class="inline-link">Learn Historical Context <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column Split Cards -->
+                <div class="showcase-column">
+                    <div class="showcase-card-mini">
+                        <div class="mini-icon">📜</div>
+                        <div>
+                            <h4>The 12 Matrilineal Clans</h4>
+                            <p>Structure of governance divided systematically into 12 clans (*Suku*) led by their respective clan chiefs under the *Undang*.</p>
+                        </div>
+                    </div>
+                    <div class="showcase-card-mini">
+                        <div class="mini-icon">🏠</div>
+                        <div>
+                            <h4>Kampung Ghadam Wooden Houses</h4>
+                            <p>Century-old residential enclaves showcasing traditional curved rooflines and intricate floral wood carvings.</p>
+                        </div>
+                    </div>
+                    <div class="showcase-card-mini">
+                        <div class="mini-icon">🗿</div>
+                        <div>
+                            <h4>Megalithic Living Stones (Batu Hidup)</h4>
+                            <p>Ancient standing stones scattered across Rembau, marking sacred legal borders and early ancestral boundaries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Split Section (KEDUDUKAN GAMBAR MUZIUM DIUBAH KE SINI) -->
+        <section class="split-info-block">
+            <div class="info-visual-side">
+                <!-- Gambar muzium heritage.jpg diletakkan secara fokus di sini -->
+                <img src="image/muziumrembaureplika.jpg" alt="Muzium Rembau Heritage">
+                <div class="floating-stat-box">
+                    <h5>Admission</h5>
+                    <p class="stat-highlight">FREE</p>
+                </div>
+            </div>
+            <div class="info-text-side">
+                <span class="section-tag-upper">Museum Directory</span>
+                <h2>Muzium Rembau (Istana Raja Melewar)</h2>
+                <p>A brilliant architectural masterpiece built entirely of timber without using a single iron nail. Located in a serene landscape, the museum offers an educational refuge into the governance of Luak Rembau.</p>
+                
+                <table class="directory-table">
+                    <tr>
+                        <td><i class="fa-regular fa-clock"></i> <strong>Operating Hours:</strong></td>
+                        <td>8:30 AM – 5:00 PM (Monday – Sunday)</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-location-dot"></i> <strong>Location:</strong></td>
+                        <td>Jalan Dato' Undang, 71300 Rembau, Negeri Sembilan</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-phone"></i> <strong>Contact:</strong></td>
+                        <td>06-685 3144 / muzium@rembau.gov.my</td>
+                    </tr>
+                </table>
+                <div style="margin-top: 25px;">
+                    <a href="attractions.html" class="btn-premium">View Attractions Gallery</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-container">
+                <p class="footer-sources">
+                    Sumber: Majlis Daerah Rembau (MDR) &nbsp;|&nbsp; Lembaga Muzium Negeri Sembilan &nbsp;|&nbsp; Arkib Negara Malaysia
+                </p>
+            </div>
+            <div class="footer-pattern"></div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
