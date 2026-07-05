@@ -58,3 +58,35 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+// 3. Fungsi Penapis Kategori Makanan (Food Filter Tabs)
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const foodCards = document.querySelectorAll(".food-card");
+
+  if (filterButtons.length > 0 && foodCards.length > 0) {
+    filterButtons.forEach(button => {
+      button.addEventListener("click", function () {
+        // Buang kelas aktif daripada butang lama, masukkan pada butang yang ditekan
+        filterButtons.forEach(btn => btn.classList.remove("active"));
+        this.classList.add("active");
+
+        const filterValue = this.getAttribute("data-filter");
+
+        foodCards.forEach(card => {
+          const cardCategory = card.getAttribute("data-category");
+          
+          if (filterValue === "all" || cardCategory === filterValue) {
+            card.style.display = "flex";
+            // Animasi masuk lembut
+            card.style.opacity = "0";
+            setTimeout(() => {
+              card.style.opacity = "1";
+              card.style.transition = "opacity 0.4s ease";
+            }, 50);
+          } else {
+            card.style.display = "none";
+          }
+        });
+      });
+    });
+  }
