@@ -16,7 +16,6 @@
   </head>
   <body>
     <div class="framed-canvas">
-      <!-- Header -->
       <header class="main-header">
         <div class="header-container">
           <div>
@@ -41,17 +40,16 @@
             </div>
           </div>
           <div class="header-right">
-            <div class="search-bar">
+            <!-- <div class="search-bar">
               <input type="text" placeholder="Search..." />
               <button aria-label="Search">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
-            </div>
+            </div> -->
           </div>
         </div>
       </header>
 
-      <!-- Navigation Header Terpaut (Linked) -->
       <nav class="main-nav">
         <div class="nav-container">
           <button class="menu-toggle" aria-label="Toggle Menu">
@@ -68,7 +66,7 @@
             <li><a href="heritage.html">Heritage</a></li>
             <li><a href="nature.html">Nature</a></li>
             <li><a href="food.html">Food</a></li>
-            <li><a href="event.html">Event</a></li>
+            <!-- <li><a href="index.html#featured-event">Event</a></li> -->
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
@@ -95,6 +93,8 @@
             Rembau alive.
           </p>
         </div>
+
+        <!-- CSS Center Tiga Kad Ini di Style.css -->
         <div class="highlight-container">
           <div class="highlight-card">
             <div class="icon"><i class="fa-solid fa-users"></i></div>
@@ -123,14 +123,21 @@
               Community gatherings and festive events strengthen unity and
               pride.
             </p>
-            <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="index.html#featured-event"
+              >Learn More <i class="fa-solid fa-arrow-right"></i
+            ></a>
           </div>
         </div>
       </section>
 
       <section class="people-section">
         <div class="people-left">
-          <div class="people-card">
+          <!-- Kad Klik Modal -->
+          <div
+            class="people-card clickable-card"
+            data-name="Dato' Lela Maharaja"
+            data-bio="Dato' Lela Maharaja merupakan jawatan Penghulu Luak (Undang) di Luak Rembau. Beliau memainkan peranan penting sebagai ketua adat dalam menjaga keamanan, hal ehwal kebudayaan, dan memastikan Adat Perpatih terus terpelihara di seluruh kawasan jajahan Rembau."
+          >
             <img src="image/RajaMelewar.jpg" alt="Historical Figure" />
             <div class="people-info">
               <span>Historical Figure</span>
@@ -138,7 +145,11 @@
             </div>
           </div>
 
-          <div class="people-card">
+          <div
+            class="people-card clickable-card"
+            data-name="Jufitri Joha"
+            data-bio="Jufitri Joha merupakan seorang tokoh masyarakat moden yang sangat aktif dalam pembangunan belia dan pelbagai aktiviti sosial, memastikan suara dan keperluan golongan muda di Negeri Sembilan sentiasa didengari."
+          >
             <img src="image/Jufitri.jpg" alt="Modern Figure" />
             <div class="people-info">
               <span>Modern Figure</span>
@@ -146,7 +157,11 @@
             </div>
           </div>
 
-          <div class="people-card">
+          <div
+            class="people-card clickable-card"
+            data-name="Abdul Rahim Yassin"
+            data-bio="Abdul Rahim Yassin mewakili barisan kepimpinan semasa yang menumpukan kepada kemajuan sosioekonomi tempatan, pemeliharaan warisan budaya bangsa, serta peningkatan infrastruktur di sekitar Pekan Rembau."
+          >
             <img src="image/AbdulRahimYassin.jpeg" alt="Leadership" />
             <div class="people-info">
               <span>Current Leadership</span>
@@ -160,7 +175,6 @@
         </div>
       </section>
 
-      <!-- Footer Standard Terpusat -->
       <footer class="main-footer">
         <div class="footer-container">
           <p class="footer-sources">

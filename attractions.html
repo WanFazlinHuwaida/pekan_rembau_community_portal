@@ -16,42 +16,37 @@
   </head>
   <body>
     <div class="framed-canvas">
-      <!-- Header -->
       <header class="main-header">
         <div class="header-container">
-          <div>
-            <div class="logo-text">
-              <a
-                href="group-members.html"
-                class="logo-area"
-                style="
-                  text-decoration: none;
-                  display: flex;
-                  align-items: center;
-                  gap: 20px;
-                "
-              >
-                <div class="logo-text">
-                  <h1>PEKAN REMBAU COMMUNITY PORTAL</h1>
-                  <p class="cursive-subtitle">
-                    People, Heritage, Nature &amp; Local Experiences
-                  </p>
-                </div>
-              </a>
-            </div>
+          <div class="logo-area">
+            <a
+              href="group-members.html"
+              style="
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+              "
+            >
+              <div class="logo-text">
+                <h1>PEKAN REMBAU COMMUNITY PORTAL</h1>
+                <p class="cursive-subtitle">
+                  People, Heritage, Nature &amp; Local Experiences
+                </p>
+              </div>
+            </a>
           </div>
           <div class="header-right">
-            <div class="search-bar">
+            <!-- <div class="search-bar">
               <input type="text" placeholder="Search..." />
               <button aria-label="Search">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
-            </div>
+            </div> -->
           </div>
         </div>
       </header>
 
-      <!-- Navigation Header Terpaut (Linked) -->
       <nav class="main-nav">
         <div class="nav-container">
           <button class="menu-toggle" aria-label="Toggle Menu">
@@ -68,13 +63,12 @@
             <li><a href="heritage.html">Heritage</a></li>
             <li><a href="nature.html">Nature</a></li>
             <li><a href="food.html">Food</a></li>
-            <li><a href="event.html">Event</a></li>
+            <!-- <li><a href="index.html#featured-event">Event</a></li> -->
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </nav>
 
-      <!-- Attractions Header -->
       <div class="attractions-page-header">
         <div class="attractions-title-row">
           <div class="attr-icon-box">
@@ -88,16 +82,10 @@
         </p>
       </div>
 
-      <!-- Main Layout (Kiri Content, Kanan Sidebar) -->
       <div class="attractions-layout">
-        <!-- Left Column (Main Content) -->
         <div class="attr-main-content">
-          <!-- HERITAGE SECTION -->
           <div class="attr-category-header" id="cat-heritage">
             <h3><i class="fa-solid fa-building-columns"></i> HERITAGE</h3>
-            <a href="heritage.html"
-              >View All <i class="fa-solid fa-arrow-right"></i
-            ></a>
           </div>
           <div class="attr-cards-grid">
             <div class="attr-card">
@@ -108,12 +96,16 @@
                   Discover the history and heritage of Rembau through artifacts,
                   documents and interactive exhibits.
                 </p>
-                <a href="heritage.html" class="btn-view-details"
-                  >View Details</a
+                <a
+                  href="#"
+                  class="btn-view-details"
+                  data-place="Muzium Rembau"
+                  data-map="https://maps.app.goo.gl/vVw4V9JAXie6Fmc37"
+                  >View Location</a
                 >
               </div>
             </div>
-            <div class="attr-card">
+            <!-- <div class="attr-card">
               <img src="image/adatpepatihreal.png" alt="Traditional House" />
               <div class="attr-card-body">
                 <h4>Negeri Sembilan Traditional House</h4>
@@ -121,11 +113,15 @@
                   Admire the beauty of traditional architecture that reflects
                   the culture and identity of the people.
                 </p>
-                <a href="heritage.html" class="btn-view-details"
-                  >View Details</a
+                <a
+                  href="#"
+                  class="btn-view-details"
+                  data-place="Rumah Tradisional Rembau"
+                  data-map="https://maps.app.goo.gl/DTSTZ8oXZakm9Cv38"
+                  >View Location</a
                 >
               </div>
-            </div>
+            </div> -->
             <div class="attr-card">
               <img
                 src="https://d3fphkxyf5o5bm.cloudfront.net/image-resize/format=webp,w=1200/QwRY54Li1HMwD7oNfqL9sIKapRVwEOTZFns0AvYCwm"
@@ -137,32 +133,36 @@
                   Learn about the royal heritage, traditional attire and the
                   history of the Negeri Sembilan Sultanate.
                 </p>
-                <a href="heritage.html" class="btn-view-details"
-                  >View Details</a
+                <a
+                  href="#"
+                  class="btn-view-details"
+                  data-place="Diraja Gallery"
+                  data-map="https://maps.app.goo.gl/vVw4V9JAXie6Fmc37"
+                  >View Location</a
                 >
               </div>
             </div>
             <div class="attr-card">
               <img src="image/heritage.jpg" alt="Historical Buildings" />
               <div class="attr-card-body">
-                <h4>Rembau Historical Buildings</h4>
+                <h4>Replica Royal Palace Melawar (Rembau Museum)</h4>
                 <p>
                   Explore historical buildings that tell the story of Rembau's
                   development over the years.
                 </p>
-                <a href="heritage.html" class="btn-view-details"
-                  >View Details</a
+                <a
+                  href="#"
+                  class="btn-view-details"
+                  data-place="Historical Buildings"
+                  data-map="https://maps.app.goo.gl/DTSTZ8oXZakm9Cv38"
+                  >View Location</a
                 >
               </div>
             </div>
           </div>
 
-          <!-- NATURE SECTION -->
           <div class="attr-category-header" id="cat-nature">
             <h3><i class="fa-solid fa-leaf"></i> NATURE</h3>
-            <a href="nature.html"
-              >View All <i class="fa-solid fa-arrow-right"></i
-            ></a>
           </div>
           <div class="attr-cards-grid">
             <div class="attr-card">
@@ -173,7 +173,13 @@
                   A refreshing waterfall surrounded by lush greenery, perfect
                   for a nature escape with family.
                 </p>
-                <a href="nature.html" class="btn-view-details">View Details</a>
+                <a
+                  href="#"
+                  class="btn-view-details"
+                  data-place="Jeram Toi Waterfall"
+                  data-map="https://maps.app.goo.gl/2VEzJiwNmydNqG1F8"
+                  >View Location</a
+                >
               </div>
             </div>
             <div class="attr-card">
@@ -187,7 +193,13 @@
                   A popular recreational spot for jogging, cycling and relaxing
                   while enjoying the scenic lake view.
                 </p>
-                <a href="nature.html" class="btn-view-details">View Details</a>
+                <a
+                  href="#"
+                  class="btn-view-details"
+                  data-place="Tasik Rembau"
+                  data-map="https://maps.app.goo.gl/CPnpVbPs3nkaodqJ7"
+                  >View Location</a
+                >
               </div>
             </div>
             <div class="attr-card">
@@ -198,28 +210,36 @@
                   A rich tropical forest with diverse flora and fauna, ideal for
                   nature walks and bird watching.
                 </p>
-                <a href="nature.html" class="btn-view-details">View Details</a>
+                <a
+                  href="#"
+                  class="btn-view-details"
+                  data-place="Bukit Bintongan"
+                  data-map="https://maps.app.goo.gl/6cQacWWw8uT48vr88"
+                  >View Location</a
+                >
               </div>
             </div>
             <div class="attr-card">
-              <img src="image/cycling.jpeg" alt="Bukit Kandu" />
+              <img src="image/cycling.jpeg" alt="Bukit Bintongan" />
               <div class="attr-card-body">
-                <h4>Bukit Kandu</h4>
+                <h4>Bukit Bintongan</h4>
                 <p>
                   Enjoy breathtaking views of Rembau from the top of this scenic
                   hill.
                 </p>
-                <a href="nature.html" class="btn-view-details">View Details</a>
+                <a
+                  href="#"
+                  class="btn-view-details"
+                  data-place="Bukit Bintongan"
+                  data-map="https://maps.app.goo.gl/6cQacWWw8uT48vr88"
+                  >View Location</a
+                >
               </div>
             </div>
           </div>
 
-          <!-- FOOD SECTION -->
           <div class="attr-category-header" id="cat-food">
             <h3><i class="fa-solid fa-bowl-food"></i> FOOD</h3>
-            <a href="food.html"
-              >View All <i class="fa-solid fa-arrow-right"></i
-            ></a>
           </div>
           <div class="attr-cards-grid">
             <div class="attr-card">
@@ -233,7 +253,13 @@
                   A signature dish of Rembau with rich, aromatic broth and
                   tender beef.
                 </p>
-                <a href="food.html" class="btn-view-details">View Details</a>
+                <a
+                  href="#"
+                  class="btn-view-details"
+                  data-place="Medan Selera Rembau"
+                  data-map="https://maps.app.goo.gl/7XWArsTzDrYLji8bA"
+                  >View Location</a
+                >
               </div>
             </div>
             <div class="attr-card">
@@ -247,7 +273,13 @@
                   A local tradition served during festivals and special
                   occasions, packed with flavour.
                 </p>
-                <a href="food.html" class="btn-view-details">View Details</a>
+                <a
+                  href="#"
+                  class="btn-view-details"
+                  data-place="Gerai Mak Ngah"
+                  data-map="https://maps.app.goo.gl/iQsh8xFkFKZ2tyVE8"
+                  >View Location</a
+                >
               </div>
             </div>
             <div class="attr-card">
@@ -258,7 +290,13 @@
                   A variety of traditional Malay kuih that are sweet, delicately
                   made and full of nostalgia.
                 </p>
-                <a href="food.html" class="btn-view-details">View Details</a>
+                <a
+                  href="#"
+                  class="btn-view-details"
+                  data-place="Pasar Pagi Rembau"
+                  data-map="https://maps.app.goo.gl/HzFJiR8a8SyTSKTc6"
+                  >View Location</a
+                >
               </div>
             </div>
             <div class="attr-card">
@@ -272,33 +310,36 @@
                   Savour a variety of local delicacies unique to Rembau that
                   will delight your taste buds.
                 </p>
-                <a href="food.html" class="btn-view-details">View Details</a>
+                <a
+                  href="#"
+                  class="btn-view-details"
+                  data-place="Pasar Malam Rembau"
+                  data-map="https://maps.app.goo.gl/yryjRXR3NTDGT4Dy9"
+                  >View Location</a
+                >
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Right Column (Sidebar) -->
         <div class="attr-sidebar">
           <div class="sidebar-section">
             <h4>EXPLORE BY CATEGORY</h4>
-            <a href="#cat-heritage" class="category-btn cat-heritage">
-              <span
+            <a href="#cat-heritage" class="category-btn cat-heritage"
+              ><span
                 ><i class="fa-solid fa-building-columns"></i> &nbsp;
                 HERITAGE</span
-              >
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="#cat-nature" class="category-btn cat-nature">
-              <span><i class="fa-solid fa-leaf"></i> &nbsp; NATURE</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="#cat-food" class="category-btn cat-food">
-              <span><i class="fa-solid fa-bowl-food"></i> &nbsp; FOOD</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
+              ><i class="fa-solid fa-arrow-right"></i
+            ></a>
+            <a href="#cat-nature" class="category-btn cat-nature"
+              ><span><i class="fa-solid fa-leaf"></i> &nbsp; NATURE</span
+              ><i class="fa-solid fa-arrow-right"></i
+            ></a>
+            <a href="#cat-food" class="category-btn cat-food"
+              ><span><i class="fa-solid fa-bowl-food"></i> &nbsp; FOOD</span
+              ><i class="fa-solid fa-arrow-right"></i
+            ></a>
           </div>
-
           <div class="sidebar-section">
             <h4>
               <i
@@ -318,7 +359,6 @@
         </div>
       </div>
 
-      <!-- Footer Standard Terpusat -->
       <footer class="main-footer">
         <div class="footer-container">
           <p class="footer-sources">

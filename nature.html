@@ -14,40 +14,36 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
     <div class="framed-canvas">
       <header class="main-header">
         <div class="header-container">
-          <div>
-            <div class="logo-text">
-              <a
-                href="group-members.html"
-                class="logo-area"
-                style="
-                  text-decoration: none;
-                  display: flex;
-                  align-items: center;
-                  gap: 20px;
-                "
-              >
-                <div class="logo-text">
-                  <h1>PEKAN REMBAU COMMUNITY PORTAL</h1>
-                  <p class="cursive-subtitle">
-                    People, Heritage, Nature &amp; Local Experiences
-                  </p>
-                </div>
-              </a>
-            </div>
+          <div class="logo-area">
+            <a
+              href="group-members.html"
+              style="
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+              "
+            >
+              <div class="logo-text">
+                <h1>PEKAN REMBAU COMMUNITY PORTAL</h1>
+                <p class="cursive-subtitle">
+                  People, Heritage, Nature &amp; Local Experiences
+                </p>
+              </div>
+            </a>
           </div>
-          <div class="header-right">
+          <!-- <div class="header-right">
             <div class="search-bar">
               <input type="text" placeholder="Search..." />
               <button aria-label="Search">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
             </div>
-          </div>
+          </div> -->
         </div>
       </header>
 
@@ -65,9 +61,9 @@
             <li><a href="amenities.html">Amenities</a></li>
             <li><a href="attractions.html">Attractions</a></li>
             <li><a href="heritage.html">Heritage</a></li>
-            <li><a href="nature.html">Nature</a></li>
+            <li><a href="nature.html" class="active">Nature</a></li>
             <li><a href="food.html">Food</a></li>
-            <li><a href="event.html">Event</a></li>
+            <!-- <li><a href="index.html#featured-event">Event</a></li> -->
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
@@ -94,7 +90,6 @@
           <h3>Waterfalls</h3>
           <p>Feel the refreshing beauty of Rembau's waterfalls.</p>
         </div>
-
         <div
           class="nature-feature-card"
           onclick="location.href = '#waterfalls'"
@@ -103,13 +98,11 @@
           <h3>Rivers</h3>
           <p>Explore peaceful rivers surrounded by nature.</p>
         </div>
-
         <div class="nature-feature-card" onclick="location.href = '#cycling'">
           <div class="nature-feature-icon">🚴</div>
           <h3>Cycling</h3>
           <p>Ride through scenic countryside and forest trails.</p>
         </div>
-
         <div class="nature-feature-card" onclick="location.href = '#forest'">
           <div class="nature-feature-icon">🌲</div>
           <h3>Forest Adventure</h3>
@@ -133,15 +126,24 @@
             <h3>Popular Locations</h3>
             <ul>
               <li><i class="fa-solid fa-water"></i> Jeram Toi Waterfall</li>
-              <li><i class="fa-solid fa-water"></i> Sungai Pedas</li>
-              <li><i class="fa-solid fa-water"></i> Sungai Rembau</li>
-              <li>
-                <i class="fa-solid fa-tree"></i> Ulu Bendul Recreational Forest
-              </li>
+              <li><i class="fa-solid fa-water"></i> Tasik Rembau</li>
             </ul>
           </div>
-          <a href="attractions.html" class="nature-btn-secondary"
-            >Read More Attractions</a
+          <!-- Butang Pop-up Map -->
+          <a
+            href="#"
+            class="nature-btn-secondary clickable-card"
+            data-place="Jeram Toi"
+            data-map="https://maps.app.goo.gl/2VEzJiwNmydNqG1F8"
+            >View Jeram Toi Map</a
+          >
+          <a
+            href="#"
+            class="nature-btn-secondary clickable-card"
+            style="margin-left: 10px"
+            data-place="Tasik Rembau"
+            data-map="https://maps.app.goo.gl/CPnpVbPs3nkaodqJ7"
+            >View Tasik Rembau Map</a
           >
         </div>
       </section>
@@ -166,8 +168,13 @@
               <p>Easy to Moderate</p>
             </div>
           </div>
-          <a href="event.html" class="nature-btn-secondary"
-            >Explore Trails & Events</a
+          <!-- Butang Pop-up Map -->
+          <a
+            href="#"
+            class="nature-btn-secondary clickable-card"
+            data-place="Rembau Cycling Route"
+            data-map="https://maps.app.goo.gl/SJJ3MobMdU7yWT44A"
+            >View Route Map</a
           >
         </div>
         <div class="nature-side-image">
@@ -186,17 +193,25 @@
           </p>
         </div>
         <div class="nature-grid-three">
-          <div class="nature-card-vertical">
+          <div
+            class="nature-card-vertical clickable-card"
+            data-place="Bukit Bintongan Jungle Trekking"
+            data-map="https://maps.app.goo.gl/6cQacWWw8uT48vr88"
+          >
             <img src="image/jungletrecking.jpeg" alt="Jungle Trekking" />
             <div class="nature-card-text">
               <h3>Jungle Trekking</h3>
               <p>
                 Discover hidden trails while enjoying the fresh forest air and
-                beautiful scenery.
+                beautiful scenery at Bukit Bintongan.
               </p>
             </div>
           </div>
-          <div class="nature-card-vertical">
+          <div
+            class="nature-card-vertical clickable-card"
+            data-place="Perkhemahan Rembau"
+            data-map="https://maps.app.goo.gl/6cQacWWw8uT48vr88"
+          >
             <img src="image/bondacampsite.jpg" alt="Camping" />
             <div class="nature-card-text">
               <h3>Camping</h3>
@@ -205,7 +220,11 @@
               </p>
             </div>
           </div>
-          <div class="nature-card-vertical">
+          <div
+            class="nature-card-vertical clickable-card"
+            data-place="Aktiviti Memerhati Burung"
+            data-map="https://maps.app.goo.gl/6cQacWWw8uT48vr88"
+          >
             <img src="image/burung.jpeg" alt="Bird Watching" />
             <div class="nature-card-text">
               <h3>Bird Watching</h3>
@@ -227,7 +246,6 @@
         <div class="footer-pattern"></div>
       </footer>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>

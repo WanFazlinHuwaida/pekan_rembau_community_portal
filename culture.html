@@ -18,7 +18,6 @@
   </head>
   <body>
     <div class="framed-canvas">
-      <!-- Header -->
       <header class="main-header">
         <div class="header-container">
           <div>
@@ -43,17 +42,16 @@
             </div>
           </div>
           <div class="header-right">
-            <div class="search-bar">
+            <!-- <div class="search-bar">
               <input type="text" placeholder="Search..." />
               <button aria-label="Search">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
-            </div>
+            </div> -->
           </div>
         </div>
       </header>
 
-      <!-- Navigation Header Terpaut (Linked) -->
       <nav class="main-nav">
         <div class="nav-container">
           <button class="menu-toggle" aria-label="Toggle Menu">
@@ -70,7 +68,7 @@
             <li><a href="heritage.html">Heritage</a></li>
             <li><a href="nature.html">Nature</a></li>
             <li><a href="food.html">Food</a></li>
-            <li><a href="event.html">Event</a></li>
+            <!-- <li><a href="index.html#featured-event">Event</a></li> -->
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
@@ -123,8 +121,9 @@
               video.
             </p>
             <div class="video-frame">
-              <video controls playsinline poster="image/TarianRembau.jpg">
+              <video width="320" height="240" autoplay muted>
                 <source src="video/CultureRembau.mp4" type="video/mp4" />
+                <source src="video/CultureRembau.ogg" type="video/ogg" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -168,7 +167,9 @@
                 Taste authentic Negeri Sembilan cuisine and traditional recipes
                 passed down for many generations.
               </p>
-              <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="food.html"
+                >Learn More <i class="fa-solid fa-arrow-right"></i
+              ></a>
             </div>
 
             <div class="highlight-card">
@@ -178,7 +179,9 @@
                 Discover the spirit of unity, cooperation and hospitality among
                 the people of Rembau.
               </p>
-              <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="people.html"
+                >Learn More <i class="fa-solid fa-arrow-right"></i
+              ></a>
             </div>
           </div>
         </section>
@@ -203,16 +206,43 @@
                 <li>✔ Traditional Games</li>
                 <li>✔ Handicrafts &amp; Local Arts</li>
               </ul>
+
               <div class="about-btn">
-                <a href="#" class="btn-read">Read More →</a>
-                <a href="#" class="btn-video">▶ Watch Video</a>
+                <a href="heritage.html" class="btn-read">Read More →</a>
+                <a href="#culture-video" class="btn-video">▶ Watch Video</a>
+              </div>
+
+              <!-- Kad Minangkabau & Adat Perpatih -->
+              <div class="culture-cards-grid">
+                <div class="culture-info-card highlighted-box">
+                  <img
+                    src="image/muziumrembaureplika.jpg"
+                    alt="Minangkabau Heritage"
+                  />
+                  <h3>Minangkabau Heritage</h3>
+                  <p>
+                    The Minangkabau people migrated from West Sumatra, bringing
+                    with them a unique architectural style characterized by
+                    horn-like curved roofs (Rumah Gadang) and a rich tradition
+                    of democratic leadership and spicy cuisine.
+                  </p>
+                </div>
+                <div class="culture-info-card highlighted-box">
+                  <img src="image/adatpepatihreal.png" alt="Adat Perpatih" />
+                  <h3>Adat Perpatih</h3>
+                  <p>
+                    A unique matrilineal customary law where lineage and
+                    property inheritance are traced through the mother's side.
+                    It emphasizes consensus, conflict resolution, and a strong
+                    sense of community belonging.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </section>
       </main>
 
-      <!-- Footer Standard Terpusat -->
       <footer class="main-footer">
         <div class="footer-container">
           <p class="footer-sources">

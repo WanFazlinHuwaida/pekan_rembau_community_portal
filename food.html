@@ -4,29 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PEKAN REMBAU COMMUNITY PORTAL - Food</title>
-    <!-- Google Fonts: Playfair Display, Poppins, Great Vibes -->
     <link
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Font Awesome Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
-
-    <!-- CSS khusus untuk menyamakan susunan grid mockup Food Page -->
     <style>
-      /* 5-Column Grid untuk Pencuci Mulut & Minuman */
       .food-grid-5 {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 15px;
         margin-bottom: 50px;
       }
-
-      /* Meta-info (Address & Hours) di dalam kad lokasi makan */
       .food-meta-info {
         margin-top: auto;
         padding-top: 12px;
@@ -45,8 +38,6 @@
         width: 12px;
         text-align: center;
       }
-
-      /* Seksyen 'Why Local Food Matters' di bahagian bawah */
       .why-local-container {
         background-color: rgba(234, 223, 201, 0.3);
         border-radius: 16px;
@@ -100,8 +91,6 @@
         max-width: 180px;
         height: auto;
       }
-
-      /* Responsif Skrin */
       @media (max-width: 1100px) {
         .food-grid-5 {
           grid-template-columns: repeat(3, 1fr);
@@ -130,42 +119,37 @@
   </head>
   <body>
     <div class="framed-canvas">
-      <!-- Header -->
       <header class="main-header">
         <div class="header-container">
-          <div>
-            <div class="logo-text">
-              <a
-                href="group-members.html"
-                class="logo-area"
-                style="
-                  text-decoration: none;
-                  display: flex;
-                  align-items: center;
-                  gap: 20px;
-                "
-              >
-                <div class="logo-text">
-                  <h1>PEKAN REMBAU COMMUNITY PORTAL</h1>
-                  <p class="cursive-subtitle">
-                    People, Heritage, Nature &amp; Local Experiences
-                  </p>
-                </div>
-              </a>
-            </div>
+          <div class="logo-area">
+            <a
+              href="group-members.html"
+              style="
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+              "
+            >
+              <div class="logo-text">
+                <h1>PEKAN REMBAU COMMUNITY PORTAL</h1>
+                <p class="cursive-subtitle">
+                  People, Heritage, Nature &amp; Local Experiences
+                </p>
+              </div>
+            </a>
           </div>
           <div class="header-right">
-            <div class="search-bar">
+            <!-- <div class="search-bar">
               <input type="text" placeholder="Search food..." />
               <button aria-label="Search">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
-            </div>
+            </div> -->
           </div>
         </div>
       </header>
 
-      <!-- Navigation Header Terpaut -->
       <nav class="main-nav">
         <div class="nav-container">
           <button class="menu-toggle" aria-label="Toggle Menu">
@@ -182,13 +166,12 @@
             <li><a href="heritage.html">Heritage</a></li>
             <li><a href="nature.html">Nature</a></li>
             <li><a href="food.html" class="active">Food</a></li>
-            <li><a href="event.html">Event</a></li>
+            <!-- <li><a href="index.html#featured-event">Event</a></li> -->
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </nav>
 
-      <!-- Premium Food Hero Banner -->
       <section
         class="premium-hero food-bg"
         style="
@@ -211,17 +194,12 @@
         </div>
       </section>
 
-      <!-- MAIN BODY CONTENT -->
       <div class="attractions-layout" id="local-dishes">
-        <!-- Left Column (Main Dishes) -->
+        <!-- LOCAL DISHES -->
         <div class="attr-main-content">
           <div class="attr-category-header">
             <h3><i class="fa-solid fa-bowl-rice"></i> LOCAL DISHES</h3>
-            <a href="#"
-              >View All Dishes <i class="fa-solid fa-arrow-right"></i
-            ></a>
           </div>
-
           <div class="attr-cards-grid">
             <div class="attr-card highlighted-box">
               <img
@@ -234,10 +212,15 @@
                   A signature noodle dish in rich, spicy-savoury broth made with
                   fresh ingredients and local herbs.
                 </p>
-                <a href="#" class="btn-view-details">View Details</a>
+                <a
+                  href="#"
+                  class="btn-view-details"
+                  data-place="Medan Selera Rembau"
+                  data-map="https://maps.app.goo.gl/7XWArsTzDrYLji8bA"
+                  >View Location</a
+                >
               </div>
             </div>
-
             <div class="attr-card highlighted-box">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpIVOdIeXHKCVnkBs7ESmdrf3hOmUgLMIzsMo8AOkQKQ&s=10"
@@ -249,10 +232,15 @@
                   A perfect combination of fragrant glutinous rice cooked in
                   bamboo and tender rendang with rich spices.
                 </p>
-                <a href="#" class="btn-view-details">View Details</a>
+                <a
+                  href="#"
+                  class="btn-view-details"
+                  data-place="Gerai Mak Ngah"
+                  data-map="https://maps.app.goo.gl/iQsh8xFkFKZ2tyVE8"
+                  >View Location</a
+                >
               </div>
             </div>
-
             <div class="attr-card highlighted-box">
               <img
                 src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=400&q=80"
@@ -264,10 +252,15 @@
                   A traditional fragrant rice cooked with aromatic spices,
                   served with chicken or beef and condiments.
                 </p>
-                <a href="#" class="btn-view-details">View Details</a>
+                <a
+                  href="#"
+                  class="btn-view-details"
+                  data-place="Medan Selera Rembau"
+                  data-map="https://maps.app.goo.gl/7XWArsTzDrYLji8bA"
+                  >View Location</a
+                >
               </div>
             </div>
-
             <div class="attr-card highlighted-box">
               <img
                 src="https://resepichenom.com/_next/image?url=https%3A%2F%2Fcdn.resepichenom.com%2Fimages%2Frecipes%2FGulai_Daging_Kawah.webp&w=3840&q=75"
@@ -279,46 +272,44 @@
                   A slow-cooked curry with a blend of spices that creates a rich
                   and flavourful taste.
                 </p>
-                <a href="#" class="btn-view-details">View Details</a>
+                <a
+                  href="#"
+                  class="btn-view-details"
+                  data-place="Pasar Malam Rembau"
+                  data-map="https://maps.app.goo.gl/yryjRXR3NTDGT4Dy9"
+                  >View Location</a
+                >
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Right Column (Sidebar Categories) -->
         <div class="attr-sidebar">
           <div class="sidebar-section">
             <h4>EXPLORE BY CATEGORY</h4>
-            <a href="heritage.html" class="category-btn cat-heritage">
-              <span
-                ><i class="fa-solid fa-building-columns"></i> &nbsp;
-                HERITAGE</span
-              >
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="nature.html" class="category-btn cat-nature">
-              <span><i class="fa-solid fa-leaf"></i> &nbsp; NATURE</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="food.html" class="category-btn cat-food">
-              <span><i class="fa-solid fa-bowl-food"></i> &nbsp; FOOD</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
+            <a href="heritage.html" class="category-btn cat-heritage"
+              ><span><i class="fa-solid fa-building-columns"></i> HERITAGE</span
+              ><i class="fa-solid fa-arrow-right"></i
+            ></a>
+            <a href="nature.html" class="category-btn cat-nature"
+              ><span><i class="fa-solid fa-leaf"></i> NATURE</span
+              ><i class="fa-solid fa-arrow-right"></i
+            ></a>
+            <a href="food.html" class="category-btn cat-food"
+              ><span><i class="fa-solid fa-bowl-food"></i> FOOD</span
+              ><i class="fa-solid fa-arrow-right"></i
+            ></a>
           </div>
         </div>
       </div>
 
-      <!-- SECTION 2: LOCAL SNACKS & DESSERTS (5 columns) -->
+      <!-- LOCAL SNACKS & DESSERTS -->
       <div style="padding: 0 30px; max-width: 1300px; margin: 0 auto">
         <div class="attr-category-header">
           <h3>
             <i class="fa-solid fa-stroopwafel"></i> LOCAL SNACKS &amp; DESSERTS
           </h3>
-          <a href="#"
-            >View All Snacks <i class="fa-solid fa-arrow-right"></i
-          ></a>
         </div>
-
         <div class="food-grid-5">
           <div class="attr-card highlighted-box">
             <img
@@ -331,10 +322,15 @@
                 A variety of classic Malay kuih such as kuih bahulu, kuih
                 bangkit and kuih kapit.
               </p>
-              <a href="#" class="btn-view-details">View Details</a>
+              <a
+                href="#"
+                class="btn-view-details"
+                data-place="Pasar Pagi Rembau"
+                data-map="https://maps.app.goo.gl/HzFJiR8a8SyTSKTc6"
+                >View Location</a
+              >
             </div>
           </div>
-
           <div class="attr-card highlighted-box">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8zVtRDv6AYwsnsVDVEPq-d46zvWDj8uWDe6_o-fifLQ&s=10"
@@ -346,10 +342,15 @@
                 Soft glutinous rice served with palm sugar syrup and grated
                 coconut.
               </p>
-              <a href="#" class="btn-view-details">View Details</a>
+              <a
+                href="#"
+                class="btn-view-details"
+                data-place="Pasar Pagi Rembau"
+                data-map="https://maps.app.goo.gl/HzFJiR8a8SyTSKTc6"
+                >View Location</a
+              >
             </div>
           </div>
-
           <div class="attr-card highlighted-box">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSamfzIhbTilkufbVVNHJFJgi5zIZMIOMWfaByp5RFItQ&s=10"
@@ -361,10 +362,15 @@
                 A steamed layered cake with vibrant colours and a sweet,
                 fragrant taste.
               </p>
-              <a href="#" class="btn-view-details">View Details</a>
+              <a
+                href="#"
+                class="btn-view-details"
+                data-place="Pasar Malam Rembau"
+                data-map="https://maps.app.goo.gl/yryjRXR3NTDGT4Dy9"
+                >View Location</a
+              >
             </div>
           </div>
-
           <div class="attr-card highlighted-box">
             <img
               src="https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480/img/recipe/ras/Assets/2fa69091-86c9-4fe0-94cb-c6f1fa9f1bb0/Derivates/bc173fcd-7611-4294-a1ad-c044e913e386.jpg"
@@ -376,10 +382,15 @@
                 Sweet and fluffy banana fritters that are crispy on the outside
                 and soft inside.
               </p>
-              <a href="#" class="btn-view-details">View Details</a>
+              <a
+                href="#"
+                class="btn-view-details"
+                data-place="Kupi Village"
+                data-map="https://maps.app.goo.gl/G38ZgDZkcs18ThMq5"
+                >View Location</a
+              >
             </div>
           </div>
-
           <div class="attr-card highlighted-box">
             <img src="image/KuihSopang.jpg" alt="Kuih Traditional" />
             <div class="attr-card-body">
@@ -388,21 +399,23 @@
                 A variety of traditional kuih made with local ingredients and
                 time-honoured recipes.
               </p>
-              <a href="#" class="btn-view-details">View Details</a>
+              <a
+                href="#"
+                class="btn-view-details"
+                data-place="Pasar Pagi Rembau"
+                data-map="https://maps.app.goo.gl/HzFJiR8a8SyTSKTc6"
+                >View Location</a
+              >
             </div>
           </div>
         </div>
       </div>
 
-      <!-- SECTION 3: LOCAL DRINKS (5 columns) -->
+      <!-- LOCAL DRINKS -->
       <div style="padding: 0 30px; max-width: 1300px; margin: 0 auto">
         <div class="attr-category-header">
           <h3><i class="fa-solid fa-mug-hot"></i> LOCAL DRINKS</h3>
-          <a href="#"
-            >View All Drinks <i class="fa-solid fa-arrow-right"></i
-          ></a>
         </div>
-
         <div class="food-grid-5">
           <div class="attr-card highlighted-box">
             <img
@@ -415,10 +428,15 @@
                 A refreshing rose syrup drink mixed with milk, perfect for hot
                 days.
               </p>
-              <a href="#" class="btn-view-details">View Details</a>
+              <a
+                href="#"
+                class="btn-view-details"
+                data-place="Medan Selera Rembau"
+                data-map="https://maps.app.goo.gl/7XWArsTzDrYLji8bA"
+                >View Location</a
+              >
             </div>
           </div>
-
           <div class="attr-card highlighted-box">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAV4cUxojK6Cb0zQAVCOrUfQ5o-OrAJ8YaXtDeL9PIuhDdL2oyiDUTy-M&s=10"
@@ -430,10 +448,15 @@
                 Fresh sugarcane juice, a natural and energizing drink loved by
                 locals.
               </p>
-              <a href="#" class="btn-view-details">View Details</a>
+              <a
+                href="#"
+                class="btn-view-details"
+                data-place="Pasar Malam Rembau"
+                data-map="https://maps.app.goo.gl/yryjRXR3NTDGT4Dy9"
+                >View Location</a
+              >
             </div>
           </div>
-
           <div class="attr-card highlighted-box">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCi7qh2P1_IhJnJHuknA9FYpsYD5c7pwkRxxn3fE-05g&s=10"
@@ -445,10 +468,15 @@
                 Pulled milk tea with a rich, creamy taste that pairs well with
                 any local dish.
               </p>
-              <a href="#" class="btn-view-details">View Details</a>
+              <a
+                href="#"
+                class="btn-view-details"
+                data-place="Gerai Mak Ngah"
+                data-map="https://maps.app.goo.gl/iQsh8xFkFKZ2tyVE8"
+                >View Location</a
+              >
             </div>
           </div>
-
           <div class="attr-card highlighted-box">
             <img
               src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=300&q=80"
@@ -460,10 +488,15 @@
                 A bold and aromatic local black coffee, best enjoyed without
                 milk.
               </p>
-              <a href="#" class="btn-view-details">View Details</a>
+              <a
+                href="#"
+                class="btn-view-details"
+                data-place="Kupi Village"
+                data-map="https://maps.app.goo.gl/G38ZgDZkcs18ThMq5"
+                >View Location</a
+              >
             </div>
           </div>
-
           <div class="attr-card highlighted-box">
             <img
               src="https://images.alodokter.com/dk0z4ums3/image/upload/v1681097029/attached_image/8-manfaat-air-kelapa-muda-untuk-kesehatan.jpg"
@@ -475,13 +508,19 @@
                 Fresh young coconut water straight from the farm, naturally
                 hydrating.
               </p>
-              <a href="#" class="btn-view-details">View Details</a>
+              <a
+                href="#"
+                class="btn-view-details"
+                data-place="Pasar Malam Rembau"
+                data-map="https://maps.app.goo.gl/yryjRXR3NTDGT4Dy9"
+                >View Location</a
+              >
             </div>
           </div>
         </div>
       </div>
 
-      <!-- SECTION 4: WHERE TO ENJOY LOCAL FOOD (4 columns) -->
+      <!-- WHERE TO ENJOY LOCAL FOOD -->
       <div
         style="padding: 0 30px; max-width: 1300px; margin: 0 auto"
         id="enjoy-local"
@@ -490,11 +529,7 @@
           <h3>
             <i class="fa-solid fa-location-dot"></i> WHERE TO ENJOY LOCAL FOOD
           </h3>
-          <a href="#"
-            >View All Places <i class="fa-solid fa-arrow-right"></i
-          ></a>
         </div>
-
         <div class="attr-cards-grid">
           <div class="attr-card highlighted-box">
             <img
@@ -517,6 +552,14 @@
                 </div>
               </div>
             </div>
+            <a
+              href="#"
+              class="btn-view-details"
+              style="margin: 0 15px 15px 15px"
+              data-place="Medan Selera Rembau"
+              data-map="https://maps.app.goo.gl/7XWArsTzDrYLji8bA"
+              >View Location</a
+            >
           </div>
 
           <div class="attr-card highlighted-box">
@@ -540,15 +583,23 @@
                 </div>
               </div>
             </div>
+            <a
+              href="#"
+              class="btn-view-details"
+              style="margin: 0 15px 15px 15px"
+              data-place="Gerai Mak Ngah"
+              data-map="https://maps.app.goo.gl/iQsh8xFkFKZ2tyVE8"
+              >View Location</a
+            >
           </div>
 
           <div class="attr-card highlighted-box">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJGfeIRac5O8IWkY0wybdXRi9DAoQzZN95ONH2FVuhOg&s=10"
-              alt="Kopi Kampung Rembau"
+              alt="Kupi Village"
             />
             <div class="attr-card-body">
-              <h4>Kopi Kampung Rembau</h4>
+              <h4>KUPI VILLAGE</h4>
               <p>
                 Enjoy local food and traditional drinks in a relaxed kampung
                 setting.
@@ -563,6 +614,14 @@
                 </div>
               </div>
             </div>
+            <a
+              href="#"
+              class="btn-view-details"
+              style="margin: 0 15px 15px 15px"
+              data-place="Kupi Village"
+              data-map="https://maps.app.goo.gl/G38ZgDZkcs18ThMq5"
+              >View Location</a
+            >
           </div>
 
           <div class="attr-card highlighted-box">
@@ -587,11 +646,19 @@
                 </div>
               </div>
             </div>
+            <a
+              href="#"
+              class="btn-view-details"
+              style="margin: 0 15px 15px 15px"
+              data-place="Pasar Malam Rembau"
+              data-map="https://maps.app.goo.gl/yryjRXR3NTDGT4Dy9"
+              >View Location</a
+            >
           </div>
         </div>
       </div>
 
-      <!-- SECTION 5: WHY LOCAL FOOD MATTERS -->
+      <!-- WHY LOCAL FOOD MATTERS -->
       <div class="why-local-container">
         <div>
           <div
@@ -603,14 +670,12 @@
             </h2>
             <div class="accent-line" style="margin: 12px 0"></div>
           </div>
-
           <div class="why-local-columns">
             <div class="why-local-col">
               <div class="why-local-icon"><i class="fa-solid fa-leaf"></i></div>
               <h4>Fresh Local Ingredients</h4>
               <p>Made with fresh herbs, spices and local produce.</p>
             </div>
-
             <div class="why-local-col">
               <div class="why-local-icon">
                 <i class="fa-solid fa-utensils"></i>
@@ -618,7 +683,6 @@
               <h4>Authentic Flavours</h4>
               <p>Traditional recipes passed down through generations.</p>
             </div>
-
             <div class="why-local-col">
               <div class="why-local-icon">
                 <i class="fa-solid fa-people-group"></i>
@@ -626,7 +690,6 @@
               <h4>Community Spirit</h4>
               <p>Food brings people together and creates lasting memories.</p>
             </div>
-
             <div class="why-local-col">
               <div class="why-local-icon">
                 <i class="fa-solid fa-heart"></i>
@@ -634,7 +697,6 @@
               <h4>Support Local</h4>
               <p>Support our local vendors and help sustain our economy.</p>
             </div>
-
             <div class="why-local-col">
               <div class="why-local-icon">
                 <i class="fa-solid fa-shield-halved"></i>
@@ -644,8 +706,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Right Side Decorative Art POT Graphic -->
         <div class="why-local-graphic">
           <svg viewBox="0 0 100 100" width="100%">
             <path
@@ -667,7 +727,6 @@
         </div>
       </div>
 
-      <!-- Standard Centered Footer -->
       <footer class="main-footer">
         <div class="footer-container">
           <p class="footer-sources">

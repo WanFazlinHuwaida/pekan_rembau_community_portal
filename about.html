@@ -16,11 +16,9 @@
   </head>
   <body>
     <div class="framed-canvas">
-      <!-- Header -->
       <header class="main-header">
         <div class="header-container">
           <div>
-           
             <div class="logo-text">
               <a
                 href="group-members.html"
@@ -42,17 +40,16 @@
             </div>
           </div>
           <div class="header-right">
-            <div class="search-bar">
+            <!-- <div class="search-bar">
               <input type="text" placeholder="Search..." />
               <button aria-label="Search">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
-            </div>
+            </div> -->
           </div>
         </div>
       </header>
 
-      <!-- Navigation Menu Bar with 12 Flowchart Buttons -->
       <nav class="main-nav">
         <div class="nav-container">
           <button class="menu-toggle" aria-label="Toggle Menu">
@@ -60,33 +57,29 @@
           </button>
           <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Rembau</a></li>
+            <li><a href="about.html" class="active">About Rembau</a></li>
             <li><a href="history.html">History</a></li>
             <li><a href="culture.html">Culture</a></li>
             <li><a href="people.html">People</a></li>
             <li><a href="amenities.html">Amenities</a></li>
-            <li><a href="template.html">Attractions</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
             <li><a href="heritage.html">Heritage</a></li>
             <li><a href="nature.html">Nature</a></li>
-            <li><a href="template.html">Food</a></li>
-            <li><a href="template.html">Event</a></li>
-            <li><a href="template.html">Contact</a></li>
+            <li><a href="food.html">Food</a></li>
+            <!-- <li><a href="index.html#featured-event">Event</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </nav>
 
-      <!-- About Main Content Layout -->
       <section class="about-hero-section">
         <div class="about-hero-container">
-          <!-- Left Column -->
           <div class="about-text-area">
             <p class="about-badge">
               <i class="fa-solid fa-arrow-right-long"></i> About Us
             </p>
             <h2 class="about-title">About the Local Community / People</h2>
-
             <div class="gold-divider-horizontal"></div>
-
             <p class="about-intro-p">
               The heart of Rembau lies in its people. A warm, welcoming
               community built on unity, respect and shared values. Living side
@@ -103,7 +96,6 @@
               Negeri Sembilan cuisine, making it a welcoming destination for
               both locals and tourists [1].
             </p>
-
             <div class="about-sub-block">
               <h3>Our Community</h3>
               <p>
@@ -115,7 +107,6 @@
                 together [1].
               </p>
             </div>
-
             <div class="about-sub-block">
               <h3>Location</h3>
               <p>
@@ -128,20 +119,18 @@
             </div>
           </div>
 
-          <!-- Right Column -->
           <div class="about-image-area">
-            <img
-              src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1200&q=80"
-              alt="Rembau Community Group Photo"
-            />
+            <video class="about-page-video" autoplay muted>
+              <source src="video/videoabout.mp4" type="video/mp4" />
+              <source src="video/videoabout.mp4" type="video/ogg" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </section>
 
-      <!-- Action Cards Grid (Bolder & Menyerlah) -->
       <section class="core-buttons-section">
         <div class="core-buttons-container">
-          <!-- History Block -->
           <div class="core-btn-card highlighted-box">
             <div class="core-card-header">
               <div class="core-icon-circle">
@@ -155,18 +144,15 @@
                 </p>
               </div>
             </div>
+            <!-- GAMBAR LOKAL FORMAL -->
             <div class="core-card-preview">
-              <img
-                src="https://images.unsplash.com/photo-1583037189850-1921ae7c6c22?auto=format&fit=crop&w=400&q=80"
-                alt="History Image Preview"
-              />
+              <img src="image/image_history.jpg" alt="History Image Preview" />
             </div>
             <a href="history.html" class="core-action-btn"
               >Explore History <i class="fa-solid fa-arrow-right"></i
             ></a>
           </div>
 
-          <!-- Culture Block (Linked to Culture Page) -->
           <div class="core-btn-card highlighted-box">
             <div class="core-card-header">
               <div class="core-icon-circle">
@@ -180,18 +166,15 @@
                 </p>
               </div>
             </div>
+            <!-- GAMBAR LOKAL FORMAL -->
             <div class="core-card-preview">
-              <img
-                src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=400&q=80"
-                alt="Culture Image Preview"
-              />
+              <img src="image/TarianRembau.jpg" alt="Culture Image Preview" />
             </div>
             <a href="culture.html" class="core-action-btn"
               >Explore Culture <i class="fa-solid fa-arrow-right"></i
             ></a>
           </div>
 
-          <!-- People Block -->
           <div class="core-btn-card highlighted-box">
             <div class="core-card-header">
               <div class="core-icon-circle">
@@ -204,11 +187,9 @@
                 </p>
               </div>
             </div>
+            <!-- GAMBAR LOKAL FORMAL -->
             <div class="core-card-preview">
-              <img
-                src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=400&q=80"
-                alt="People Image Preview"
-              />
+              <img src="image/People.jpg" alt="People Image Preview" />
             </div>
             <a href="people.html" class="core-action-btn"
               >Explore People <i class="fa-solid fa-arrow-right"></i
@@ -217,7 +198,6 @@
         </div>
       </section>
 
-      <!-- Footer -->
       <footer class="main-footer">
         <div class="footer-container">
           <p class="footer-sources">
